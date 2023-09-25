@@ -2,7 +2,7 @@ import "./App.css";
 import OptionalCard from "./components/OptionalCard";
 import ChoosingCard from "./components/ChoosingCard";
 import { useState } from "react";
-
+// comment is added
 function App() {
   const [info, setInfo] = useState([
     {
