@@ -41,7 +41,14 @@
   width: 100%;
   margin: 0 auto;
   height: 300px;
-  border: 2px solid red;
+}
+.choosingImgContainer{
+  height: 150px;
+  margin-right: 20px;
+}
+
+.imgContainer img,.choosingImgContainer img{
+  height: 100%;
 }
 .cardItemTitle {
   font-size: 18px;
@@ -119,4 +126,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.cards{
+  display: flex;
+  margin-bottom: 20px;
 }
