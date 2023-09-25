@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  width: 1040px;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+.optionalCard,
+.choosingCard {
+  width: 350px;
+  height: 500px;
+  border: 5px solid black;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+}
+.optionalCard,.choosingCard {
+  overflow: scroll;
+}
+.optionalCard::-webkit-scrollbar,.choosingCard::-webkit-scrollbar  {
+  display: none;
+}
+.imgLogo {
+  width: 50px;
+}
+.mainTitle {
+  margin: 0;
+  font-size: 18px;
+}
+.mainText {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.cardItem {
+  margin: 20px auto;
+}
+.imgContainer {
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  border: 2px solid red;
+}
+.cardItemTitle {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.cardItemText {
+  font-size: 12px;
+  line-height: 20px;
+}
+.cardItemBottom {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.btn,
+.price {
+  font-size: 13px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  border: 1px solid rgb(255, 217, 0);
+  padding: 5px 10px;
+  background-color: rgb(255, 217, 0);
+  border-radius: 16px;
+  transition: 0.5s;
+}
+.btn:hover{
+  background: #fff;
+  color: rgb(255, 217, 0);
+  cursor: pointer;
+}
+.btn-success {
+  border: 1px solid rgb(22, 169, 22);
+  padding: 5px 10px;
+  background-color: rgb(22, 169, 22);
+  border-radius: 16px;
+  transition: 0.5s;
+  color:white
+}
+.btn-success:hover{
+  background: #fff;
+  color: rgb(22, 169, 22);
+  cursor: pointer;
+}
+.yours{
+  display: flex;
+  align-items: center;
+}
+.yoursImgContainer{
+  width: 30%;
+}
+.yoursCardItemTitle{
+  font-size: 12px;
+}
+.yoursPrice{
+  font-size: 14px;
+  font-weight: bold;
+}
+.minus,.plus{
+  padding: 5px 10px;
+  background: #ccc;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid #ccc;
+  transition: 0.5s;
+}
+.minus:hover,.plus:hover{
+  background-color: #fff;
+  color: #ccc;
+  cursor: pointer;
+}
+.yoursItemBottom{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
