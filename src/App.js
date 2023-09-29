@@ -58,6 +58,7 @@ function App() {
           quantity: data.quantity + 1,
         };
       }
+      // con
       return data;
     });
     setNewArray(increasedData);
