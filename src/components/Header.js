@@ -8,7 +8,6 @@ const Header = (props) => {
         alt="img"
       />
       <h2 className="mainTitle">{props.title}</h2>
-      <p className="mainText">{props.text}</p>
     </div>
   );
 };
